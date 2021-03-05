@@ -20,7 +20,9 @@
                     {% endfor %}
                 </ul>
                 {% endif %}
-                
+                    <pre>
+                        {{ dump(annonce.categories) }}
+                    </pre>
                 <p>{{ annonce.contenu }}</p>
                     {% if annonce.image %}
                         <div><img src="{{ asset('uploads/' ~ annonce.image) }}" class="img-fluid"></div>
